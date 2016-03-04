@@ -8,7 +8,7 @@ var excludeIgnore = require('babel-exclude-ignore')
 require('babel-core/register')({
   ignore: excludeIgnore(["my-module"], true)
   // the same as:
-  // ignore: excludeIgnore({"modules": ["bbooks-shared"], "debug": true})
+  // ignore: excludeIgnore({"modules": ["my-module"], "debug": true})
 })
 // note that it will still ignore nested `/my-modules/node_modules/**` files
 ```
