@@ -1,7 +1,9 @@
-### babel-exclude-ignore
+# babel-exclude-ignore
 
 By default babel transform ignores evertying in `node_modules`. 
 This module allows to include some modules (folders) from project's `node_modules`.
+
+## usage
 
 ```js
 var excludeIgnore = require('babel-exclude-ignore')
@@ -25,3 +27,8 @@ and then:
 require('babel-exclude-ignore/register')
 ```
 it will read `package.json` and register `ignore`.
+
+## install
+```bash
+npm install babel-exclude-ignore
+```
