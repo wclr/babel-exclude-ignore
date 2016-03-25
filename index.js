@@ -10,7 +10,6 @@ var excludeIgnore = (modules, debug) => {
   if (!Array.isArray(modules)){
     throw(new Error('"modules" to excluded should be array of strings'))
   }
-  console.log('modules', modules)
   var excludeModule = (module, filename)  => {
     if (minimatch(filename, `**/${module}/node_modules/**`)) {
       return true
